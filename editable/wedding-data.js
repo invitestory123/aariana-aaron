@@ -25,6 +25,7 @@ window.WEDDING_DATA = {
     dateLabel: "January 16, 2027",
     shortDate: "16.01.27",
     dateISO: "2027-01-16T15:30:00+05:30",
+    scheduleTitle: "Schedule of Events",
     invitationNote: "Dear Friends and Family,<br /><br />With hearts full of love and happiness, we invite you to join us as we celebrate the beginning of our forever. Your presence would make our special day even more meaningful.",
   },
 

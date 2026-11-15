@@ -254,7 +254,12 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
       if (invEl && W.wedding.invitationNote) invEl.innerHTML = W.wedding.invitationNote;
     }
 
-    // Schedule (6 Items Timeline)
+    // Schedule (6 Items Timeline & Title)
+    var schedTitleEl = document.querySelector("#rec2487446103 [field='tn_text_1763405219328']");
+    if (schedTitleEl) {
+      schedTitleEl.textContent = (W.wedding && W.wedding.scheduleTitle) || "Schedule of Events";
+    }
+
     if (W.schedule && W.schedule.length > 0) {
       var scheduleList = document.querySelector('.wedding-timeline-list');
       if (scheduleList) {
@@ -298,17 +303,17 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
       } catch(e) {}
     }
 
-    // Details & Registry
+    // Details & Registry (Strictly scoped to rec2487446183)
     if (W.details) {
-      var dressEl = document.querySelector("[field='tn_text_1778524751695000001']");
+      var dressEl = document.querySelector("#rec2487446183 [field='tn_text_1778524751695000001']");
       if (dressEl && W.details.dressCode) dressEl.textContent = W.details.dressCode;
     }
 
     if (W.registry) {
-      var regTitleEl = document.querySelector("[field='tn_text_1763405219328']");
+      var regTitleEl = document.querySelector("#rec2487446183 [field='tn_text_1763405219328']");
       if (regTitleEl && W.registry.title) regTitleEl.textContent = W.registry.title;
 
-      var regNoteEl = document.querySelector("[field='tn_text_1772813849329000001']");
+      var regNoteEl = document.querySelector("#rec2487446183 [field='tn_text_1772813849329000001']");
       if (regNoteEl && W.registry.note) {
         var btnsHtml = '';
         if (W.registry.items && W.registry.items.length) {
@@ -354,6 +359,35 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
     applyWeddingData();
   }
   window.addEventListener('load', applyWeddingData);
+
+  // Floating Flower Scroll Animation (Item 3: restored from OG template)
+  function syncFloatingFlower() {
+    var flower = document.querySelector('#rec2487446103 [data-elem-id="1773602024985"]');
+    var schedRec = document.getElementById('rec2487446103');
+    if (!flower || !schedRec) return;
+
+    var rect = schedRec.getBoundingClientRect();
+    var winH = window.innerHeight || document.documentElement.clientHeight;
+    
+    var startY = winH * 0.75;
+    var endY = winH * 0.15;
+    var totalRange = schedRec.offsetHeight + (startY - endY);
+    var current = startY - rect.top;
+    var progress = current / totalRange;
+    progress = Math.max(0, Math.min(1, progress));
+    var y = progress * 320;
+
+    var sbsTarget = flower.querySelector('.t-sbs-anim_target');
+    if (!sbsTarget) {
+      var atom = flower.querySelector('.tn-atom') || flower;
+      atom.style.transform = 'translate3d(0, ' + y + 'px, 0) rotate(325deg)';
+    }
+  }
+
+  window.addEventListener('scroll', syncFloatingFlower, { passive: true });
+  window.addEventListener('resize', syncFloatingFlower, { passive: true });
+  document.addEventListener('DOMContentLoaded', syncFloatingFlower);
+  window.addEventListener('load', syncFloatingFlower);
 })();
 </script>
 
