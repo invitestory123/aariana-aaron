@@ -51,27 +51,100 @@ body {
   opacity: 0 !important;
 }
 
-/* Opening Section Parchment Card & Spacing (Item 2: space after paragraph) */
+/* Opening Section Parchment Card & Centered Content (Item 1) */
 #rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] {
-  top: 785px !important;
+  display: block !important;
+  top: 895px !important;
+  left: 5% !important;
+  right: 5% !important;
+  width: 90% !important;
+  max-width: 90% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
 }
+
 #rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] {
-  top: 885px !important;
+  display: block !important;
+  top: 1000px !important;
+  left: 5% !important;
+  right: 5% !important;
+  width: 90% !important;
+  max-width: 90% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+#rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] .tn-atom,
+#rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] .tn-atom {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+.welcome-quote-script {
+  font-family: 'Beau Rivage', cursive;
+  font-size: 38px;
+  line-height: 1.2;
+  color: #a67d2b;
+  text-shadow: 0 1px 2px rgba(166, 125, 43, 0.15);
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.welcome-quote-trans {
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #846f61;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.welcome-message-heading {
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 19px;
+  color: #6a5140;
+  margin-bottom: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.welcome-message-body {
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #6a5140;
+  text-align: center;
 }
 
 @media screen and (max-width: 639px) {
   #rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] {
-    top: 785px !important;
+    top: 890px !important;
+    left: 5% !important;
+    right: 5% !important;
+    width: 90% !important;
   }
   #rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] {
-    top: 885px !important;
+    top: 995px !important;
     left: 5% !important;
+    right: 5% !important;
     width: 90% !important;
-    max-width: 340px !important;
   }
-  #rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] .tn-atom {
-    font-size: 15.5px !important;
-    line-height: 1.55 !important;
+  .welcome-quote-script {
+    font-size: 34px;
+    margin-bottom: 4px;
+  }
+  .welcome-quote-trans {
+    font-size: 16px;
+  }
+  .welcome-message-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .welcome-message-body {
+    font-size: 15px;
+    line-height: 1.55;
   }
 }
 
@@ -127,28 +200,41 @@ body {
   visibility: hidden !important;
 }
 
-/* Floating Flower on Timeline (Item 3: restored from OG template) */
+/* Floating Flower on Timeline (Constrained strictly to line top and bottom ends) */
 #rec2487446103 .tn-elem[data-elem-id="1773602024985"] {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
   z-index: 25 !important;
   pointer-events: none !important;
+  position: absolute !important;
+  left: 50% !important;
+  margin-left: 0 !important;
+  transform: translateX(-50%) !important;
+  width: 50px !important;
+  height: 50px !important;
 }
 #rec2487446103 .tn-elem[data-elem-id="1773602024985"] .tn-atom {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
 #rec2487446103 .tn-elem[data-elem-id="1773602024985"] .tn-atom__img {
+  width: 100% !important;
+  height: auto !important;
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-/* Dynamic Schedule Container */
+/* Dynamic Schedule Container (Item 2: Increased Size of Events) */
 .wedding-schedule-wrapper {
   position: absolute;
-  top: 130px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -159,19 +245,19 @@ body {
 .wedding-timeline-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 24px;
   position: relative;
 }
 
 .wedding-timeline-list::before {
   content: '';
   position: absolute;
-  top: 12px;
-  bottom: 12px;
+  top: 16px;
+  bottom: 16px;
   left: 50%;
   width: 2px;
   background: #8c7666;
-  opacity: 0.6;
+  opacity: 0.65;
   transform: translateX(-50%);
 }
 
@@ -187,7 +273,7 @@ body {
   text-align: right;
   padding-right: 22px;
   font-family: 'NewFonts', Arial, sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   color: #846f61;
   letter-spacing: -0.5px;
@@ -195,40 +281,44 @@ body {
 }
 
 .wedding-timeline-marker {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background-color: #8c7666;
   transform: rotate(45deg);
   flex-shrink: 0;
-  box-shadow: 0 0 0 3px #f9f0e0;
+  box-shadow: 0 0 0 3.5px #f9f0e0;
 }
 
 .wedding-timeline-title {
   flex: 1;
   text-align: left;
   padding-left: 22px;
-  font-family: 'NewFonts', Arial, sans-serif;
-  font-size: 19px;
+  font-family: 'NewFonts', 'Imperial Script', cursive;
+  font-size: 28px;
   font-weight: 300;
   color: #6c513f;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 @media screen and (max-width: 639px) {
   .wedding-schedule-wrapper {
-    top: 125px;
+    top: 115px;
     width: 95%;
   }
   .wedding-timeline-list {
-    gap: 13px;
+    gap: 22px;
+  }
+  .wedding-timeline-list::before {
+    top: 15px;
+    bottom: 15px;
   }
   .wedding-timeline-time {
-    font-size: 19px;
-    padding-right: 14px;
+    font-size: 22px;
+    padding-right: 18px;
   }
   .wedding-timeline-title {
-    font-size: 16.5px;
-    padding-left: 14px;
+    font-size: 24px;
+    padding-left: 18px;
   }
 }
 

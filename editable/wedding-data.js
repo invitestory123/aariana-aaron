@@ -17,7 +17,7 @@ window.WEDDING_DATA = {
       spanish: "“Dos almas, un solo corazón”",
       english: "Two souls, one heart.",
     },
-    subtitle: "“Dos almas, un solo corazón”<br /><span style='font-family:\"Ovo\",serif; font-size:18px; font-weight:400; font-style:italic; color:#846f61; display:block; margin-top:6px;'>Two souls, one heart.</span>",
+    subtitle: "<div class='welcome-quote-script'>Dos almas, un solo corazón</div><div class='welcome-quote-trans'>Two souls, one heart.</div>",
   },
 
   wedding: {
@@ -28,7 +28,7 @@ window.WEDDING_DATA = {
     scheduleTitle: "Schedule of Events",
     closingTitle: "Hope to see you there!",
     closingCouple: "Ariana and Aaron",
-    invitationNote: "Dear Friends and Family,<br /><br />With hearts full of love and happiness, we invite you to join us as we celebrate the beginning of our forever. Your presence would make our special day even more meaningful.",
+    invitationNote: "<div class='welcome-message-heading'>Dear Friends and Family,</div><div class='welcome-message-body'>With hearts full of love and happiness, we invite you to join us as we celebrate the beginning of our forever. Your presence would make our special day even more meaningful.</div>",
   },
 
   schedule: [
