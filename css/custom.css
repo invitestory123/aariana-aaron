@@ -360,12 +360,19 @@ body {
   }
 }
 
-/* ── Hide redundant old Islamic center block ── */
-#rec2487446153 {
+/* ── Remove Islamic Center & redundant legacy location block ── */
+#rec2487446153,
+[data-elem-id="1782312310182000001"],
+img[src*="ChatGPT_Image_May_25"],
+img[data-original*="ChatGPT_Image_May_25"] {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
   height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  width: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  top: -99999px !important;
 }
 
 /* ── Location Card Polish ── */
