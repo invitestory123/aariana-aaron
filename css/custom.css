@@ -593,15 +593,13 @@ body {
   z-index: 2;
 }
 
-.closing-photo-floral {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  display: block;
-  pointer-events: none;
-  z-index: 3;
+.closing-photo-floral,
+.couple-photo-floral {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
 }
 
 @media screen and (max-width: 480px) {
