@@ -350,6 +350,19 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
         var cp = document.querySelector('.couple-photo-img');
         if (cp) cp.src = W.media.photo1;
       }
+      if (W.media.closingFloral) {
+        var cf = document.querySelector('.closing-photo-floral');
+        if (cf) cf.src = W.media.closingFloral;
+      }
+    }
+
+    var closingNames = document.querySelector('.closing-photo-names');
+    if (closingNames && W.couple && W.couple.bride && W.couple.groom) {
+      closingNames.textContent = (W.wedding && W.wedding.closingCouple) || (W.couple.bride + ' and ' + W.couple.groom);
+    }
+    var closingTitle = document.querySelector('.closing-photo-title');
+    if (closingTitle && W.wedding && W.wedding.closingTitle) {
+      closingTitle.textContent = W.wedding.closingTitle;
     }
   }
 
@@ -445,16 +458,18 @@ alt='' imgfield='tn_img_1773673546575'
     <a href="https://www.amazon.com/wedding/guest-view/CKDCW0TK5M7" target="_blank" rel="noopener" class="royale-btn royale-btn-secondary">Amazon Registry</a>
   </div>
 </div> </div> <div class='t396__elem tn-elem tn-elem__24874461831763405219328' data-elem-id='1763405219328' data-elem-type='text' data-field-top-value="284" data-field-left-value="320" data-field-height-value="64" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-textfit-value="autoheight" data-field-fontsize-value="41" data-field-left-res-320-value="-120" data-field-left-res-480-value="-40" data-field-left-res-640-value="40" data-field-left-res-960-value="200"> <div class='tn-atom'field='tn_text_1763405219328'>Wedding Gift Registry</div> </div> <div class='t396__elem tn-elem tn-elem__24874461831778524751695000001 t-animate' data-elem-id='1778524751695000001' data-elem-type='text' data-field-top-value="163" data-field-left-value="445" data-field-height-value="78" data-field-width-value="310" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="2" data-animate-distance="40" data-animate-mobile="y" data-field-textfit-value="autoheight" data-field-fontsize-value="21" data-field-left-res-320-value="10" data-field-width-res-320-value="300" data-field-left-res-480-value="85" data-field-left-res-640-value="165" data-field-left-res-960-value="325"> <div class='tn-atom'field='tn_text_1778524751695000001'>We kindly ask our guests to avoid wearing white and red.</div> </div> <div class='t396__elem tn-elem tn-elem__24874461831778524751695000002' data-elem-id='1778524751695000002' data-elem-type='text' data-field-top-value="86" data-field-left-value="320" data-field-height-value="64" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-textfit-value="autoheight" data-field-fontsize-value="41" data-field-left-res-320-value="-120" data-field-left-res-480-value="-40" data-field-left-res-640-value="40" data-field-left-res-960-value="200"> <div class='tn-atom'field='tn_text_1778524751695000002'>Dress Code</div> </div> <div class='t396__elem tn-elem tn-elem__24874461831780166531595' data-elem-id='1780166531595' data-elem-type='image' data-field-top-value="-614" data-field-left-value="317" data-field-height-value="587" data-field-width-value="587" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-filewidth-value="1512" data-field-fileheight-value="1512" data-field-heightmode-value="hug" data-field-height-res-320-value="587" data-field-height-res-480-value="587" data-field-height-res-640-value="587" data-field-height-res-960-value="587"> <div class='tn-atom'> <img class='tn-atom__img t-img' data-original='external/media.invitestory.in/wax-seal-royale/images/cdn/623915249_2629494717_4.png' src='external/media.invitestory.in/wax-seal-royale/images/cdn/623915249_2629494717_4.png' alt='' imgfield='' /> </div> </div> <div class='t396__elem tn-elem tn-elem__24874461831780167075599000003 ' data-elem-id='1780167075599000003' data-elem-type='image' data-field-top-value="9" data-field-left-value="658" data-field-height-value="401" data-field-width-value="305" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="blockintoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-loop="loop" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1.02,'sy':1.02,'op':1,'ro':1,'ti':2000,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':2000,'ea':'0','dt':0},{'mx':0,'my':0,'sx':0.98,'sy':0.98,'op':1,'ro':-1,'ti':2000,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':2000,'ea':'0','dt':0}]" data-field-filewidth-value="498" data-field-fileheight-value="655" data-field-heightmode-value="hug" data-field-top-res-320-value="-1" data-field-left-res-320-value="155" data-field-height-res-320-value="363" data-field-width-res-320-value="276" data-field-left-res-480-value="248" data-field-height-res-480-value="401" data-field-left-res-640-value="378" data-field-height-res-640-value="401" data-field-left-res-960-value="558" data-field-height-res-960-value="401"> <div class='tn-atom'> <img class='tn-atom__img t-img' data-original='external/media.invitestory.in/wax-seal-royale/images/cdn/noroot_10.png' src='external/media.invitestory.in/wax-seal-royale/images/cdn/noroot_10.png' alt='' imgfield='' /> </div> </div> <div class='t396__elem tn-elem tn-elem__24874461831780167004386000002 ' data-elem-id='1780167004386000002' data-elem-type='image' data-field-top-value="264" data-field-left-value="305" data-field-height-value="240" data-field-width-value="251" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="blockintoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-loop="loop" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1.04,'sy':1.04,'op':1,'ro':1,'ti':1500,'ea':'0','dt':0},{'mx':0,'my':0,'sx':0.98,'sy':0.98,'op':1,'ro':0,'ti':1500,'ea':'0','dt':0},{'mx':0,'my':0,'sx':0.98,'sy':0.98,'op':1,'ro':-2,'ti':1500,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':1500,'ea':'0','dt':0}]" data-field-filewidth-value="332" data-field-fileheight-value="317" data-field-heightmode-value="hug" data-field-left-res-320-value="-80" data-field-height-res-320-value="240" data-field-left-res-480-value="-25" data-field-height-res-480-value="240" data-field-left-res-640-value="35" data-field-height-res-640-value="240" data-field-left-res-960-value="185" data-field-height-res-960-value="240"> <div class='tn-atom'> <img class='tn-atom__img t-img' data-original='images/cdn/noroot_14.png' src='images/cdn/noroot_14.png' alt='' imgfield='' /> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('2487446183');});});</script> <!-- /T396 --> </div>    
-<!-- Section 9: Couple Photo Card -->
-<div id="rec-couple-photo" class="r t-rec couple-photo-section">
-  <div class="couple-photo-card">
-    <div class="couple-photo-title">Ariana &amp; Aaron</div>
-    <div class="couple-photo-frame">
-      <img src="editable/assets/photo1.jpg" alt="Ariana &amp; Aaron" class="couple-photo-img" />
+<!-- Section 9: Closing Couple Photo & Floral Garland -->
+<div id="rec-couple-photo" class="r t-rec closing-photo-section">
+  <div class="closing-photo-container">
+    <div class="closing-photo-header">
+      <h2 class="closing-photo-title">Hope to see you there!</h2>
+      <p class="closing-photo-names">Ariana and Aaron</p>
     </div>
-    <div class="couple-photo-quote">“Dos almas, un solo corazón”</div>
-    <div class="couple-photo-translation">Two souls, one heart.</div>
-    <div class="couple-photo-date">January 16, 2027 &bull; Kovilakom Resort, Kerala</div>
+    <div class="closing-photo-stage">
+      <img src="editable/assets/photo1.jpg" alt="Ariana and Aaron" class="closing-photo-img couple-photo-img" />
+      <div class="closing-photo-fade"></div>
+      <img src="images/cdn/closing-floral.png" alt="" class="closing-photo-floral" />
+    </div>
   </div>
 </div>
 

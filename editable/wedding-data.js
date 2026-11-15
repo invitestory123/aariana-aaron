@@ -26,6 +26,8 @@ window.WEDDING_DATA = {
     shortDate: "16.01.27",
     dateISO: "2027-01-16T15:30:00+05:30",
     scheduleTitle: "Schedule of Events",
+    closingTitle: "Hope to see you there!",
+    closingCouple: "Ariana and Aaron",
     invitationNote: "Dear Friends and Family,<br /><br />With hearts full of love and happiness, we invite you to join us as we celebrate the beginning of our forever. Your presence would make our special day even more meaningful.",
   },
 
@@ -67,6 +69,7 @@ window.WEDDING_DATA = {
 
   media: {
     photo1: "./editable/assets/photo1.jpg",
+    closingFloral: "./images/cdn/closing-floral.png",
     overlayImage: "./editable/assets/ChatGPT Image Jun 23, 2026, 04_40_29 PM.png",
     sealVideo: "./editable/assets/1782224012851.mp4",
     heroVideo: "./editable/assets/Swans2.mov",

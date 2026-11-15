@@ -374,47 +374,66 @@ body {
   }
 }
 
-/* ── Couple Photo Card Section (Section 9) ── */
+/* ── Closing Couple Photo Section (Matching Template Design) ── */
+.closing-photo-section,
 .couple-photo-section {
   background-color: #f9f0e0;
-  padding: 30px 20px 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.couple-photo-card {
-  max-width: 460px;
+  padding: 40px 0 60px;
+  position: relative;
   width: 100%;
-  background: #fdf8ee;
-  border: 1px solid #d9c9a8;
-  border-radius: 20px;
-  padding: 28px 22px 32px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(166, 125, 43, 0.12);
-  position: relative;
   box-sizing: border-box;
-}
-
-.couple-photo-title {
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 18px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #a67d2b;
-  margin-bottom: 18px;
-}
-
-.couple-photo-frame {
-  position: relative;
-  border-radius: 16px;
   overflow: hidden;
-  border: 2px solid #c9a96e;
-  box-shadow: 0 8px 24px rgba(90, 15, 27, 0.16);
-  max-width: 350px;
-  margin: 0 auto;
+  display: block;
 }
 
+.closing-photo-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.closing-photo-header {
+  text-align: center;
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
+
+.closing-photo-title {
+  font-family: 'Beau Rivage', 'Imperial Script', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: #a67d2b;
+  line-height: 1.2;
+  margin: 0 0 6px 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(166, 125, 43, 0.15);
+}
+
+.closing-photo-names {
+  font-family: 'Ovo', 'Cinzel', Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #a67d2b;
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-align: center;
+  text-transform: none;
+}
+
+.closing-photo-stage {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  line-height: 0;
+}
+
+.closing-photo-img,
 .couple-photo-img {
   width: 100%;
   height: auto;
@@ -422,29 +441,41 @@ body {
   object-fit: cover;
 }
 
-.couple-photo-quote {
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 18px;
-  color: #5a0f1b;
-  margin-top: 20px;
-  letter-spacing: 0.05em;
-  line-height: 1.35;
+.closing-photo-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, #f9f0e0 0%, rgba(249, 240, 224, 0.7) 40%, rgba(249, 240, 224, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
-.couple-photo-translation {
-  font-family: 'Ovo', Georgia, serif;
-  font-size: 15px;
-  font-style: italic;
-  color: #846f61;
-  margin-top: 6px;
-  letter-spacing: 0.03em;
+.closing-photo-floral {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  z-index: 3;
 }
 
-.couple-photo-date {
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 13px;
-  letter-spacing: 0.2em;
-  color: #a67d2b;
-  margin-top: 14px;
-  text-transform: uppercase;
+@media screen and (max-width: 480px) {
+  .closing-photo-section,
+  .couple-photo-section {
+    padding: 30px 0 50px;
+  }
+  .closing-photo-title {
+    font-size: 34px;
+    margin-bottom: 4px;
+  }
+  .closing-photo-names {
+    font-size: 17px;
+  }
+  .closing-photo-header {
+    margin-bottom: 18px;
+  }
 }
