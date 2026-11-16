@@ -460,12 +460,14 @@ img[data-original*="ChatGPT_Image_May_25"] {
   pointer-events: none !important;
 }
 
-/* Expand parchment background so buttons fit safely inside with top space */
+/* Expand parchment background so buttons fit safely inside with top space and full elegant width */
 #rec2487446183 .tn-elem[data-elem-id="1779529136519000001"] {
   top: 15px !important;
   height: 655px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
+  width: 744px !important;
+  max-width: none !important;
   z-index: 1 !important;
 }
 
@@ -619,8 +621,8 @@ img[data-original*="ChatGPT_Image_May_25"] {
     height: 645px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    width: 96% !important;
-    max-width: 440px !important;
+    width: 744px !important;
+    max-width: none !important;
   }
 
   #rec2487446183 .tn-elem[data-elem-id="1778524751695000002"] {
