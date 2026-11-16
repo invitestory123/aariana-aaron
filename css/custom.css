@@ -477,9 +477,9 @@ img[data-original*="ChatGPT_Image_May_25"] {
   object-fit: fill !important;
 }
 
-/* Dress code heading - shifted down to provide generous breathing space below torn edge */
+/* Dress code heading - positioned with generous breathing space below torn edge */
 #rec2487446183 .tn-elem[data-elem-id="1778524751695000002"] {
-  top: 80px !important;
+  top: 62px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   width: 90% !important;
@@ -490,9 +490,9 @@ img[data-original*="ChatGPT_Image_May_25"] {
   visibility: visible !important;
 }
 
-/* Dress code text */
+/* Dress code text - spaced comfortably below the heading */
 #rec2487446183 .tn-elem[data-elem-id="1778524751695000001"] {
-  top: 126px !important;
+  top: 136px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   width: 88% !important;
@@ -536,9 +536,9 @@ img[data-original*="ChatGPT_Image_May_25"] {
   opacity: 1 !important;
 }
 
-/* Move bottom flower decor safely down and non-blocking */
+/* Move bottom flower decor safely up onto parchment corner so it never covers closing words */
 #rec2487446183 .tn-elem[data-elem-id="1780167004386000002"] {
-  top: 545px !important;
+  top: 445px !important;
   z-index: 2 !important;
   pointer-events: none !important;
 }
@@ -626,14 +626,14 @@ img[data-original*="ChatGPT_Image_May_25"] {
   }
 
   #rec2487446183 .tn-elem[data-elem-id="1778524751695000002"] {
-    top: 76px !important;
+    top: 60px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 90% !important;
   }
 
   #rec2487446183 .tn-elem[data-elem-id="1778524751695000001"] {
-    top: 122px !important;
+    top: 134px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 86% !important;
@@ -656,7 +656,7 @@ img[data-original*="ChatGPT_Image_May_25"] {
   }
 
   #rec2487446183 .tn-elem[data-elem-id="1780167004386000002"] {
-    top: 540px !important;
+    top: 445px !important;
   }
 
   .registry-buttons-wrap {
